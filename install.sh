@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install git -y
+# sudo apt install git -y
 sudo apt install git-gui gitk -y
 # git config --global user.name "Hounjoung Rim"
 # git config --global user.email "rhjoung@gmail.com"
@@ -8,7 +8,7 @@ sudo apt install git-gui gitk -y
 
 sudo apt install universal-ctags -y
 
-sudo apt-get install curl
+sudo apt-get install curl -y
 
 sudo apt-get install cscope -y
 chmod 755 ./mkcscope.sh
