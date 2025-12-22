@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# sudo apt install git -y
+sudo apt install git -y
 sudo apt install git-gui gitk -y
 # git config --global user.name "Hounjoung Rim"
 # git config --global user.email "rhjoung@gmail.com"
@@ -8,7 +8,7 @@ sudo apt install git-gui gitk -y
 
 sudo apt install universal-ctags -y
 
-sudo apt-get install curl -y
+sudo apt-get install curl
 
 sudo apt-get install cscope -y
 chmod 755 ./mkcscope.sh
@@ -24,6 +24,10 @@ sudo apt  install tio -y
 sudo apt install net-tools -y
 sudo apt-get install openssh-server -y
 
+sudo apt-get install tmux -y
+chmod +x ./tmx
+sudo cp ./tmx /usr/bin/.
+cp ./tmux.conf ~/.tmux.conf
 
 git clone --depth 1 https://github.com/junegunn/fzf.git   ~/.fzf
 ~/.fzf/install
