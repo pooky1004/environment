@@ -29,6 +29,8 @@ chmod +x ./tmx
 sudo cp ./tmx /usr/bin/.
 cp ./tmux.conf ~/.tmux.conf
 
+cp ./bashrc ~/.bashrc
+
 git clone --depth 1 https://github.com/junegunn/fzf.git   ~/.fzf
 ~/.fzf/install
 
