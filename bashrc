@@ -16,9 +16,9 @@ mkcd() {
 
 if which vcprompt > /dev/null; then
     export VCPROMPT_FORMAT='[0;34m<%b%m%u>[m'
-    export PS1='\[\e[0;32m\]\u\[\e[39m\]@\[\e[36m\]\h:\[\e[33m\]\w\[\e[m\] \[$(vcprompt)\]\[\e[1;31m\]\$\[\e[m\] '
+    export PS1='\[\e[0;32m\]\u\[\e[39m\]@\[\e[33m\]\W\[\e[m\] \[$(vcprompt)\]\[\e[1;31m\]\$\[\e[m\] '
 else
-    export PS1='\[\e[0;32m\]\u\[\e[m\]\[\e[39m\]@\[\e[36m\]\h:\[\e[33m\]\w\[\e[m\]\[\e[1;31m\]\$\[\e[m\] '
+    export PS1='\[\e[0;32m\]\u\[\e[m\]\[\e[39m\]@\[\e[33m\]\W\[\e[m\]\[\e[1;31m\]\$\[\e[m\] '
 fi
 
 [ -d "$HOME/.local/bin" ] && export PATH="$HOME/.local/bin:$PATH"
