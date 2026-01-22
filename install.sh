@@ -10,6 +10,10 @@ sudo apt install universal-ctags -y
 
 sudo apt-get install curl
 
+sudo apt-get install libreadline-dev
+
+sudo apt-get install libncurses-dev
+
 sudo apt-get install cscope -y
 chmod 755 ./mkcscope.sh
 sudo cp ./mkcscope.sh /usr/bin
@@ -29,7 +33,7 @@ chmod +x ./tmx
 sudo cp ./tmx /usr/bin/.
 cp ./tmux.conf ~/.tmux.conf
 
-cp ./bashrc ~/.bashrc
+# cp ./bashrc ~/.bashrc
 
 git clone --depth 1 https://github.com/junegunn/fzf.git   ~/.fzf
 ~/.fzf/install
